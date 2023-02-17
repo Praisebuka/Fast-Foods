@@ -27,9 +27,12 @@
             @endif
 
             <!-- Page Content -->
-            <main>
+            <main class="m-2 p-8">
                 {{ $slot }}
             </main>
         </div>
     </body>
+
+    The new codes from the AlpineToolbox show appear in this File.
+
 </html>
