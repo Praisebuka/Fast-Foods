@@ -51,13 +51,17 @@
             <x-primary-button>{{ __('Save') }}</x-primary-button>
 
             @if (session('status') === 'profile-updated')
-                <p
+            <script> alert('Update Saved.'); </script>
+            
+            {{-- The below code is actually the follow come code, but I improvised. --}}
+
+            {{-- <p
                     x-data="{ show: true }"
                     x-show="show"
                     x-transition
-                    x-init="setTimeout(() => show = false, 2000)"
+                    x-init="setTimeout(() => show = false, 3000)"
                     class="text-sm text-gray-600"
-                >{{ __('Saved.') }}</p>
+                >{{ __('Update Saved.') }}</p> --}}
             @endif
         </div>
     </form>

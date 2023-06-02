@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\MenuController;
+use App\Http\Controllers\Admin\ReservationController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -29,5 +32,11 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+# Routes for editing the features of the app.
+Route::get('/dashboard/category', [CategoryController::class, 'index'])->name('category');
+Route::get('/dashboard/menu', [MenuController::class, 'index'])->name('menu');
+Route::get('/dashboard/reserve', [ReservationController::class, 'index'])->name('reserve');
+
 
 require __DIR__.'/auth.php';

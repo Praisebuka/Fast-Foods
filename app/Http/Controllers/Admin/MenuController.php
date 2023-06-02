@@ -14,7 +14,7 @@ class MenuController extends Controller
      */
     public function index()
     {
-        //
+        return view('features.menu');
     }
 
     /**

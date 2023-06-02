@@ -1,7 +1,7 @@
 <x-admin-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
+            {{ __("Reservation's segment") }}
         </h2>
     </x-slot>
 
@@ -12,7 +12,6 @@
                     {{ __("You're logged into the admin--board!") }}
                 </div>
             </div>
-                    <p> This page is for the <h4>ADMIN ONLY</h4><br> </p> 
 
         </div>
     </div>
