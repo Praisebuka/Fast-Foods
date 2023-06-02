@@ -21,11 +21,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+    # Route for the auth login process
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+
+    # For the auth editing of profile details
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
