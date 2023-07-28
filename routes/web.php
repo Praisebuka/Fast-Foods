@@ -44,7 +44,4 @@ Route::get('/dashboard/reserve', [ReservationController::class, 'index'])->name(
 
 
 
-//check
-
-
 require __DIR__.'/auth.php';
