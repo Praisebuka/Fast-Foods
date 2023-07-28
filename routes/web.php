@@ -42,4 +42,9 @@ Route::get('/dashboard/menu', [MenuController::class, 'index'])->name('menu');
 Route::get('/dashboard/reserve', [ReservationController::class, 'index'])->name('reserve');
 
 
+
+
+//check
+
+
 require __DIR__.'/auth.php';
